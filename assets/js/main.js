@@ -274,3 +274,12 @@
     });
   });
 })();
+
+// HR
+
+TweenMax.staggerFrom(
+  "section",
+  0.65,
+  { top: "+=60px", opacity: 0, ease: Strong.easeOut },
+  0.1
+);

@@ -134,7 +134,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -153,6 +153,7 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
+  float: inline-start;
   padding: 0;
 }
 
@@ -444,6 +445,7 @@ h6 {
   font-weight: 700;
   line-height: 64px;
   color: #fff;
+  -webkit-text-stroke: 1px rgb(39, 39, 39); /* width and color */
 }
 
 #hero h2 {
@@ -560,6 +562,7 @@ section {
 
 .section-title h2 {
   color: #6333ed;
+  -webkit-text-stroke: 1px rgb(39, 39, 39); /* width and color */
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -594,6 +597,7 @@ section {
   font-weight: 600;
   font-size: 32px;
   color: #6333ed;
+  -webkit-text-stroke: 1px rgb(39, 39, 39); /* width and color */
 }
 
 .about .content ul {
@@ -638,34 +642,6 @@ section {
   position: absolute;
   right: 20px;
   top: 12px;
-}
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  background: linear-gradient(
-      90deg,
-      rgba(88, 70, 249, 0.5) 0%,
-      rgba(123, 39, 216, 0.5) 100%
-    ),
-    url("../img/counts-bg.png") center center no-repeat;
-  padding: 80px 0 60px 0;
-}
-
-.counts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-
-.counts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 /*--------------------------------------------------------------
@@ -798,34 +774,6 @@ section {
 
 .awareness .iconbox-teal:hover .icon path {
   fill: #11dbcf;
-}
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
-
-.features .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #5846f9;
-}
-
-.features .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
-.features .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
 }
 
 /*--------------------------------------------------------------
@@ -1663,4 +1611,15 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 40%;
+  position: relative;
+  margin: 30px auto;
 }
