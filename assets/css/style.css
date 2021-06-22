@@ -432,7 +432,7 @@ h6 {
     ),
     url("https://external-preview.redd.it/BAlBPhYaNoPMMbqXNuXtR5jucvAwavx0v1BXTUaK-vk.png?auto=webp&s=1e3532fa19b0e2c1c33b6b52463d6be320e36568")
       center center no-repeat;
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
 }
 
 #hero .container,
