@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #444444;
+  --secondary-color: #444444;
+  --font-color: #444444;
+  --bg-color: #fff;
+  --heading-color: #444444;
+}
+[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --font-color: #fff;
+  --bg-color: #1b1e24;
+  --heading-color: #fff;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+.header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.header .moon,
+.header .sun {
+  width: 34px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.header .sun:hover {
+  animation: sun_rotate 1s infinite;
+}
+.header .moon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes sun_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
