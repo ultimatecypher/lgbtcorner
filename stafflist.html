@@ -1,485 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>The LGBT+ Corner</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Main CSS Files -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets\css\bg.css" rel="stylesheet" />
-    <link href="assets\css\darkmode.css" rel="stylesheet" />
- 
-  </head>
-
-  <body>
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>The LGBT+ Corner</title>
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon" />
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+      <!-- Google Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+         rel="stylesheet"
+         />
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link
+         href="assets/vendor/bootstrap/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+         rel="stylesheet"
+         />
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+      <link
+         href="assets/vendor/glightbox/css/glightbox.min.css"
+         rel="stylesheet"
+         />
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+      <!-- Main CSS Files -->
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="assets\css\bg.css" rel="stylesheet" />
+      <link href="assets\css\darkmode.css" rel="stylesheet" />
+   </head>
+   <body>
       <!-- ======= Header ======= -->
-    
-
-
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html"></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <div class="container">
-        <div class="header">
-          <img class="sun" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZBNjAwOyIgZD0iTTUwNy44MzQsMzAxLjYwOGwtNTQuNzY5LTQ4LjMxMmw1Mi44MzItNTAuMzk5YzEuOTQxLTEuODUyLDIuNzQtNC41OTEsMi4wOTktNy4xODkgIGMtMC42NDItMi41OTctMi42MjktNC42NTUtNS4yMTEtNS40MDFsLTcwLjMxNi0yMC4yOTJsMjUuOTg4LTY4LjA1NmMwLjk1NS0yLjUsMC40OTUtNS4zMTYtMS4yMDQtNy4zODkgIGMtMS43LTIuMDcyLTQuMzgzLTMuMDg1LTcuMDM4LTIuNjU3bC03Mi4yNzQsMTEuNjUybC01Ljg3OC03Mi41NjFjLTAuMjE2LTIuNjY2LTEuODQ2LTUuMDE1LTQuMjc1LTYuMTYxICBjLTIuNDI5LTEuMTQ2LTUuMjkxLTAuOTE3LTcuNTA0LDAuNjAxbC02MC4yNjYsNDEuMzQyTDI2My40MDksMy43NDJDMjYyLjA2NCwxLjQyNiwyNTkuNTc5LDAsMjU2Ljg4OSwwICBjLTIuNjksMC01LjE3NCwxLjQyNi02LjUxOSwzLjc0MkwyMDguMzQ3LDc2LjExbC03Mi42OS00MS45NTNjLTIuMzI3LTEuMzQzLTUuMTk3LTEuMzQ5LTcuNTI4LTAuMDE4ICBjLTIuMzMzLDEuMzMxLTMuNzczLDMuNzk5LTMuNzgsNi40NzNsLTAuMTc2LDcyLjc5NWwtNzIuOTY1LTYuMDE0Yy0yLjY3NS0wLjIyLTUuMjc1LDAuOTk3LTYuODA3LDMuMTk0ICBjLTEuNTMzLDIuMTk3LTEuNzcxLDUuMDQxLTAuNjIyLDcuNDU5bDMxLjI0Miw2NS44MzVMNi41MDgsMjA5LjU2MmMtMi41MTYsMC45NDMtNC4zMzUsMy4xNS00Ljc3Myw1Ljc4OSAgYy0wLjQzOCwyLjYzOCwwLjU3NSw1LjMwOCwyLjY1Niw3LjAwM2w1Ni42MTksNDYuMTUybC01MC44MTMsNTIuNDFjLTEuODY2LDEuOTI1LTIuNTU5LDQuNjk0LTEuODE2LDcuMjY0ICBjMC43NDQsMi41NywyLjgxLDQuNTUsNS40MTksNS4xOTRsNzEuMDU1LDE3LjU1MUw2MS41Niw0MTkuOTM2Yy0wLjg1NiwyLjUzNS0wLjI4Niw1LjMzMSwxLjQ5NCw3LjMzNiAgYzEuNzgxLDIuMDA1LDQuNTAyLDIuOTEzLDcuMTM3LDIuMzgybDcxLjc2LTE0LjQ0M2w4LjcyMSw3Mi4yNzhjMC4zMTksMi42NTUsMi4wNDEsNC45MzgsNC41MTMsNS45OSAgYzIuNDc0LDEuMDUyLDUuMzIzLDAuNzEyLDcuNDc1LTAuODkxbDU4LjU5Ni00My42NDdsMzkuMDU1LDU5LjU2NmMxLjM4MiwyLjE3OSwzLjc4OSwzLjQ5Miw2LjM2NywzLjQ5MiAgYzAuMDk4LDAsMC4xOTYtMC4wMDIsMC4yOTUtMC4wMDZjMi42ODctMC4xMDQsNS4xMTUtMS42MjYsNi4zNjgtMy45OTJsMzQuMTA3LTYyLjQwNWw2MS44MzksMzguOTc0ICBjMi4yNzMsMS40MzIsNS4xMzcsMS41NSw3LjUyMiwwLjMxYzIuMzgyLTEuMjQsMy45MTktMy42NSw0LjAzLTYuMzIybDMuMDMxLTcyLjczNGw3Mi42NzQsOC44NGMyLjY2NCwwLjMyNCw1LjMxLTAuNzkxLDYuOTI4LTIuOTI3ICBjMS42MTgtMi4xMzcsMS45NjYtNC45NjksMC45MTQtNy40M2wtMjguNjM2LTY2Ljk5N2w2OS40NjUtMjMuMDAzYzIuNTUyLTAuODQ1LDQuNDU2LTIuOTc5LDQuOTk3LTUuNTk5ICBDNTEwLjc1MiwzMDYuMDksNTA5Ljg0NSwzMDMuMzgzLDUwNy44MzQsMzAxLjYwOHoiLz4KPGVsbGlwc2Ugc3R5bGU9ImZpbGw6I0ZGREIyRDsiIGN4PSIyNTQuMzUiIGN5PSIyNTQuNjkxIiByeD0iMTU1LjA2OSIgcnk9IjE1NC45NDkiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQ0EwMDsiIGQ9Ik0yNTQuMzU0LDk5Ljc0M2MtMy44ODQsMC03LjczMiwwLjE0Ny0xMS41NDMsMC40MjhjODAuMjUsNS45MDEsMTQzLjUyNSw3Mi44MjUsMTQzLjUyNSwxNTQuNTIxICBjMCw4MS42OTUtNjMuMjc1LDE0OC42MTktMTQzLjUyNSwxNTQuNTIxYzMuODExLDAuMjgsNy42NiwwLjQyOCwxMS41NDMsMC40MjhjODUuNjQxLDAsMTU1LjA2OC02OS4zNzMsMTU1LjA2OC0xNTQuOTQ4ICBDNDA5LjQyMiwxNjkuMTE2LDMzOS45OTUsOTkuNzQzLDI1NC4zNTQsOTkuNzQzeiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" style="display: none;">
-          <img class="moon hide" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5OS43MTIgNDk5LjcxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk5LjcxMiA0OTkuNzEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDkzQjsiIGQ9Ik0xNDYuODgsMzc1LjUyOGMxMjYuMjcyLDAsMjI4LjYyNC0xMDIuMzY4LDIyOC42MjQtMjI4LjY0YzAtNTUuOTUyLTIwLjE2LTEwNy4xMzYtNTMuNTItMTQ2Ljg4ICBDNDI1LjA1NiwzMy4wOTYsNDk5LjY5NiwxMjkuNjQsNDk5LjY5NiwyNDMuNzA0YzAsMTQxLjM5Mi0xMTQuNjA4LDI1Ni0yNTYsMjU2Yy0xMTQuMDY0LDAtMjEwLjYwOC03NC42NC0yNDMuNjk2LTE3Ny43MTIgIEMzOS43NDQsMzU1LjM2OCw5MC45NDQsMzc1LjUyOCwxNDYuODgsMzc1LjUyOHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0Y0QzUzNDsiIGQ9Ik00MDEuOTIsNDIuNzc2YzM0LjI0LDQzLjUwNCw1NC44MTYsOTguMjcyLDU0LjgxNiwxNTcuOTUyYzAsMTQxLjM5Mi0xMTQuNjA4LDI1Ni0yNTYsMjU2ICBjLTU5LjY4LDAtMTE0LjQ0OC0yMC41NzYtMTU3Ljk1Mi01NC44MTZjNDYuODQ4LDU5LjQ3MiwxMTkuMzQ0LDk3Ljc5MiwyMDAuOTI4LDk3Ljc5MmMxNDEuMzkyLDAsMjU2LTExNC42MDgsMjU2LTI1NiAgQzQ5OS43MTIsMTYyLjEyLDQ2MS4zOTIsODkuNjQsNDAxLjkyLDQyLjc3NnoiLz4KPGc+Cgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZEODNCOyIgcG9pbnRzPSIxMjguMTI4LDk5Ljk0NCAxNTQuNDk2LDE1My40IDIxMy40NzIsMTYxLjk2IDE3MC44LDIwMy41NiAxODAuODY0LDI2Mi4yOTYgICAgMTI4LjEyOCwyMzQuNTY4IDc1LjM3NiwyNjIuMjk2IDg1LjQ0LDIwMy41NiA0Mi43NjgsMTYxLjk2IDEwMS43NDQsMTUzLjQgICIvPgoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGRDgzQjsiIHBvaW50cz0iMjc2Ljg2NCw4Mi44NCAyOTAuNTI4LDExMC41NTIgMzIxLjEwNCwxMTQuOTg0IDI5OC45NzYsMTM2LjU1MiAzMDQuMjA4LDE2Ni45ODQgICAgMjc2Ljg2NCwxNTIuNjE2IDI0OS41MiwxNjYuOTg0IDI1NC43NTIsMTM2LjU1MiAyMzIuNjI0LDExNC45ODQgMjYzLjIsMTEwLjU1MiAgIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" style="display: block;">
-        </div>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#awareness">Raising Awareness</a></li>
-          <li><a href="index.html#Gallery">Gallery</a></li>
-          <li><a href="index.html#meettheteam">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Our Social Media</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <!-- ======= Social media links ======= -->
-              <li><a href="https://twitter.com/TheLGBTCorner?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">RS3 Twitter</a></li>
-              <li><a href="https://twitter.com/OSRS_LGBT">OSRS Twitter</a></li>
-              <li><a href="https://www.facebook.com/LGBTCornerClan/">Facebook</a></li>
-              <li><a href="https://www.instagram.com/the.lgbt.corner/?hl=en">Instagram</a></li>
-            </ul>
-          </li>
-          <!-- update this link after href when start a new thread as it links to the latest forum recruitment post -->
-          <li><a class="getstarted scrollto" href="https://secure.runescape.com/m=forum/a=13/c=pg1P-b7q97s/forums?290,291,452,66119156">Join Us</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- .navbar -->
-
-    </div>
-  </header>
-  <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <style>
-      body{
-          margin: 0;
-          padding: 0;
-      }
-      .hero{
-          width: 100%;
-          height: 500px;
-          position: relative;
-          background: linear-gradient(
-      45deg,
-      rgba(86, 58, 250, 0.9) 0%,
-      rgba(116, 15, 214, 0.9) 100%
-    ),
-    url("https://external-preview.redd.it/BAlBPhYaNoPMMbqXNuXtR5jucvAwavx0v1BXTUaK-vk.png?auto=webp&s=1e3532fa19b0e2c1c33b6b52463d6be320e36568")
-      center center repeat
-      }       
-  </style>
-
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div
-            class="
-              col-xl-5 col-lg-6
-              pt-3 pt-lg-0
-              order-2 order-lg-1
-              d-flex
-              flex-column
-              justify-content-center
-            "
-          >
-            <h1>Welcome to The LGBT+ Corner</h1>
-            <h2>
-              A place for LGBT+ Runescapers from across the globe to get
-              together,<br>play games, chat, have a laugh and make friends!
-            </h2>
-            
-            <div class="buttons">
-              <div class="action_btn">
-                <a
-                  href="https://secure.runescape.com/m=clan-home/clan/The%20LGBT%20Corner"
-                  class="btn-get-started scrollto"
-                  >Runescape</a
-                >
-                <a
-                  href="https://www.runeclan.com/clan/The_LGBT_Corner"
-                  class="btn-get-started scrollto"
-                  >Runeclan</a
-                >
-              </div>
+      <header id="header" class="fixed-top ">
+         <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html"></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <div class="container">
+               <div class="header">
+                  <img class="sun" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZBNjAwOyIgZD0iTTUwNy44MzQsMzAxLjYwOGwtNTQuNzY5LTQ4LjMxMmw1Mi44MzItNTAuMzk5YzEuOTQxLTEuODUyLDIuNzQtNC41OTEsMi4wOTktNy4xODkgIGMtMC42NDItMi41OTctMi42MjktNC42NTUtNS4yMTEtNS40MDFsLTcwLjMxNi0yMC4yOTJsMjUuOTg4LTY4LjA1NmMwLjk1NS0yLjUsMC40OTUtNS4zMTYtMS4yMDQtNy4zODkgIGMtMS43LTIuMDcyLTQuMzgzLTMuMDg1LTcuMDM4LTIuNjU3bC03Mi4yNzQsMTEuNjUybC01Ljg3OC03Mi41NjFjLTAuMjE2LTIuNjY2LTEuODQ2LTUuMDE1LTQuMjc1LTYuMTYxICBjLTIuNDI5LTEuMTQ2LTUuMjkxLTAuOTE3LTcuNTA0LDAuNjAxbC02MC4yNjYsNDEuMzQyTDI2My40MDksMy43NDJDMjYyLjA2NCwxLjQyNiwyNTkuNTc5LDAsMjU2Ljg4OSwwICBjLTIuNjksMC01LjE3NCwxLjQyNi02LjUxOSwzLjc0MkwyMDguMzQ3LDc2LjExbC03Mi42OS00MS45NTNjLTIuMzI3LTEuMzQzLTUuMTk3LTEuMzQ5LTcuNTI4LTAuMDE4ICBjLTIuMzMzLDEuMzMxLTMuNzczLDMuNzk5LTMuNzgsNi40NzNsLTAuMTc2LDcyLjc5NWwtNzIuOTY1LTYuMDE0Yy0yLjY3NS0wLjIyLTUuMjc1LDAuOTk3LTYuODA3LDMuMTk0ICBjLTEuNTMzLDIuMTk3LTEuNzcxLDUuMDQxLTAuNjIyLDcuNDU5bDMxLjI0Miw2NS44MzVMNi41MDgsMjA5LjU2MmMtMi41MTYsMC45NDMtNC4zMzUsMy4xNS00Ljc3Myw1Ljc4OSAgYy0wLjQzOCwyLjYzOCwwLjU3NSw1LjMwOCwyLjY1Niw3LjAwM2w1Ni42MTksNDYuMTUybC01MC44MTMsNTIuNDFjLTEuODY2LDEuOTI1LTIuNTU5LDQuNjk0LTEuODE2LDcuMjY0ICBjMC43NDQsMi41NywyLjgxLDQuNTUsNS40MTksNS4xOTRsNzEuMDU1LDE3LjU1MUw2MS41Niw0MTkuOTM2Yy0wLjg1NiwyLjUzNS0wLjI4Niw1LjMzMSwxLjQ5NCw3LjMzNiAgYzEuNzgxLDIuMDA1LDQuNTAyLDIuOTEzLDcuMTM3LDIuMzgybDcxLjc2LTE0LjQ0M2w4LjcyMSw3Mi4yNzhjMC4zMTksMi42NTUsMi4wNDEsNC45MzgsNC41MTMsNS45OSAgYzIuNDc0LDEuMDUyLDUuMzIzLDAuNzEyLDcuNDc1LTAuODkxbDU4LjU5Ni00My42NDdsMzkuMDU1LDU5LjU2NmMxLjM4MiwyLjE3OSwzLjc4OSwzLjQ5Miw2LjM2NywzLjQ5MiAgYzAuMDk4LDAsMC4xOTYtMC4wMDIsMC4yOTUtMC4wMDZjMi42ODctMC4xMDQsNS4xMTUtMS42MjYsNi4zNjgtMy45OTJsMzQuMTA3LTYyLjQwNWw2MS44MzksMzguOTc0ICBjMi4yNzMsMS40MzIsNS4xMzcsMS41NSw3LjUyMiwwLjMxYzIuMzgyLTEuMjQsMy45MTktMy42NSw0LjAzLTYuMzIybDMuMDMxLTcyLjczNGw3Mi42NzQsOC44NGMyLjY2NCwwLjMyNCw1LjMxLTAuNzkxLDYuOTI4LTIuOTI3ICBjMS42MTgtMi4xMzcsMS45NjYtNC45NjksMC45MTQtNy40M2wtMjguNjM2LTY2Ljk5N2w2OS40NjUtMjMuMDAzYzIuNTUyLTAuODQ1LDQuNDU2LTIuOTc5LDQuOTk3LTUuNTk5ICBDNTEwLjc1MiwzMDYuMDksNTA5Ljg0NSwzMDMuMzgzLDUwNy44MzQsMzAxLjYwOHoiLz4KPGVsbGlwc2Ugc3R5bGU9ImZpbGw6I0ZGREIyRDsiIGN4PSIyNTQuMzUiIGN5PSIyNTQuNjkxIiByeD0iMTU1LjA2OSIgcnk9IjE1NC45NDkiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQ0EwMDsiIGQ9Ik0yNTQuMzU0LDk5Ljc0M2MtMy44ODQsMC03LjczMiwwLjE0Ny0xMS41NDMsMC40MjhjODAuMjUsNS45MDEsMTQzLjUyNSw3Mi44MjUsMTQzLjUyNSwxNTQuNTIxICBjMCw4MS42OTUtNjMuMjc1LDE0OC42MTktMTQzLjUyNSwxNTQuNTIxYzMuODExLDAuMjgsNy42NiwwLjQyOCwxMS41NDMsMC40MjhjODUuNjQxLDAsMTU1LjA2OC02OS4zNzMsMTU1LjA2OC0xNTQuOTQ4ICBDNDA5LjQyMiwxNjkuMTE2LDMzOS45OTUsOTkuNzQzLDI1NC4zNTQsOTkuNzQzeiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" style="display: none;">
+                  <img class="moon hide" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5OS43MTIgNDk5LjcxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk5LjcxMiA0OTkuNzEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDkzQjsiIGQ9Ik0xNDYuODgsMzc1LjUyOGMxMjYuMjcyLDAsMjI4LjYyNC0xMDIuMzY4LDIyOC42MjQtMjI4LjY0YzAtNTUuOTUyLTIwLjE2LTEwNy4xMzYtNTMuNTItMTQ2Ljg4ICBDNDI1LjA1NiwzMy4wOTYsNDk5LjY5NiwxMjkuNjQsNDk5LjY5NiwyNDMuNzA0YzAsMTQxLjM5Mi0xMTQuNjA4LDI1Ni0yNTYsMjU2Yy0xMTQuMDY0LDAtMjEwLjYwOC03NC42NC0yNDMuNjk2LTE3Ny43MTIgIEMzOS43NDQsMzU1LjM2OCw5MC45NDQsMzc1LjUyOCwxNDYuODgsMzc1LjUyOHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0Y0QzUzNDsiIGQ9Ik00MDEuOTIsNDIuNzc2YzM0LjI0LDQzLjUwNCw1NC44MTYsOTguMjcyLDU0LjgxNiwxNTcuOTUyYzAsMTQxLjM5Mi0xMTQuNjA4LDI1Ni0yNTYsMjU2ICBjLTU5LjY4LDAtMTE0LjQ0OC0yMC41NzYtMTU3Ljk1Mi01NC44MTZjNDYuODQ4LDU5LjQ3MiwxMTkuMzQ0LDk3Ljc5MiwyMDAuOTI4LDk3Ljc5MmMxNDEuMzkyLDAsMjU2LTExNC42MDgsMjU2LTI1NiAgQzQ5OS43MTIsMTYyLjEyLDQ2MS4zOTIsODkuNjQsNDAxLjkyLDQyLjc3NnoiLz4KPGc+Cgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZEODNCOyIgcG9pbnRzPSIxMjguMTI4LDk5Ljk0NCAxNTQuNDk2LDE1My40IDIxMy40NzIsMTYxLjk2IDE3MC44LDIwMy41NiAxODAuODY0LDI2Mi4yOTYgICAgMTI4LjEyOCwyMzQuNTY4IDc1LjM3NiwyNjIuMjk2IDg1LjQ0LDIwMy41NiA0Mi43NjgsMTYxLjk2IDEwMS43NDQsMTUzLjQgICIvPgoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGRDgzQjsiIHBvaW50cz0iMjc2Ljg2NCw4Mi44NCAyOTAuNTI4LDExMC41NTIgMzIxLjEwNCwxMTQuOTg0IDI5OC45NzYsMTM2LjU1MiAzMDQuMjA4LDE2Ni45ODQgICAgMjc2Ljg2NCwxNTIuNjE2IDI0OS41MiwxNjYuOTg0IDI1NC43NTIsMTM2LjU1MiAyMzIuNjI0LDExNC45ODQgMjYzLjIsMTEwLjU1MiAgIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" style="display: block;">
+               </div>
             </div>
-          </div>
-          <div
-            class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img"
-            data-aos="zoom-in"
-            data-aos-delay="150"
-          >
-            <img
-              src="assets\img\Gallery\logo-big.png"
-              class="img-fluid animated"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Hero -->
-
-    <main id="main">
-
-      <!-- ======= About Section ======= -->
+            <nav id="navbar" class="navbar">
+               <ul>
+                  <li><a href="index.html#hero">Home</a></li>
+                  <li><a href="index.html#about">About</a></li>
+                  <li><a href="index.html#awareness">Raising Awareness</a></li>
+                  <li><a href="index.html#Gallery">Gallery</a></li>
+                  <li><a href="index.html#meettheteam">Team</a></li>
+                  <li class="dropdown">
+                     <a href="#"><span>Our Social Media</span> <i class="bi bi-chevron-down"></i></a>
+                     <ul>
+                        <!-- ======= Social media links ======= -->
+                        <li><a href="https://twitter.com/TheLGBTCorner?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">RS3 Twitter</a></li>
+                        <li><a href="https://twitter.com/OSRS_LGBT">OSRS Twitter</a></li>
+                        <li><a href="https://www.facebook.com/LGBTCornerClan/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/the.lgbt.corner/?hl=en">Instagram</a></li>
+                     </ul>
+                  </li>
+                  <!-- update this link after href when start a new thread as it links to the latest forum recruitment post -->
+                  <li><a class="getstarted scrollto" href="https://secure.runescape.com/m=forum/a=13/c=pg1P-b7q97s/forums?290,291,452,66119156">Join Us</a></li>
+               </ul>
+               <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+         </div>
+      </header>
+      <!-- End Header -->
+      <!-- ======= Hero Section ======= -->
       <style>
-      body {
-	 font-family: 'lato', sans-serif;
-}
- .container {
-    text-align: center;
-	 max-width: 1000px;
-	 margin-left: auto;
-	 margin-right: auto;
-	 padding-left: 10px;
-	 padding-right: 10px;
-}
- h3 {
-    color: var(--primary-color);
-	font-size: 26px;
-	margin: 20px 0;
-	text-align: center;
-}
- h2 small {
-	 font-size: 0.5em;
-}
- .responsive-table li {
-    color: var(--primary-color);
-    color: #444444;
-	 border-radius: 3px;
-	 padding: 10px 30px;
-	 display: flex;
-	 justify-content: space-between;
-	 margin-bottom: 10px;
-}
- .responsive-table .table-header {
-     color:#111111;
-     background-color: #fff;
-	 font-size: 14px;
-	 text-transform: uppercase;
-	 letter-spacing: 0.03em;
-}
- .responsive-table .table-row {
-    background-color: #fff;
-	 box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-}
- .responsive-table .col-1 {
-	 flex-basis: 10%;
-}
- .responsive-table .col-2 {
-	 flex-basis: 40%;
-}
- .responsive-table .col-3 {
-	 flex-basis: 25%;
-}
- .responsive-table .col-4 {
-	 flex-basis: 25%;
-}
- @media all and (max-width: 767px) {
-	 .responsive-table .table-header {
-		 display: none;
-	}
-	 .responsive-table li {
-		 display: block;
-	}
-	 .responsive-table .col {
-		 flex-basis: 100%;
-	}
-	 .responsive-table .col {
-		 display: flex;
-		 padding: 10px 0;
-	}
-	 .responsive-table .col:before {
-		 color: #6c7a89;
-		 padding-right: 10px;
-		 content: attr(data-label);
-		 flex-basis: 50%;
-		 text-align: right;
-	}
-}    
+         body{
+         margin: 0;
+         padding: 0;
+         }
+         .hero{
+         width: 100%;
+         height: 500px;
+         position: relative;
+         background: linear-gradient(
+         45deg,
+         rgba(86, 58, 250, 0.9) 0%,
+         rgba(116, 15, 214, 0.9) 100%
+         ),
+         url("https://external-preview.redd.it/BAlBPhYaNoPMMbqXNuXtR5jucvAwavx0v1BXTUaK-vk.png?auto=webp&s=1e3532fa19b0e2c1c33b6b52463d6be320e36568")
+         center center repeat
+         }       
       </style>
-      <!-- ======= Layout like --- "name: chaos bolt" / Role: Admin / Team: Community Management / Rs3/Osrs: Rs3 ======= -->
-      <div class="container">
-        <h3>A full list of staff and their roles in the clan</h3>
-        <p>Feel free to contact any of the staff or ask in clan chat but this list is for better direction and understanding what role everyone has
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1"><b>Name</b></div>
-            <div class="col col-2"><b>main role</b></div>
-            <div class="col col-3"><b>team</b></div>
-            <div class="col col-4"><b>rs3/osrs</b></div>
-          </li>
-          <!--1-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--2-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--3-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--4-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--5-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--6-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--7-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--8-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--9-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--10-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li><!--1-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--11-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--12-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--13-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--14-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--15-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--16-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--17-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--18-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--19-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--20-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--21-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--22-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--23-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--24-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-          <!--25-->
-          <li class="table-row">
-            <div class="col col-1" data-label="Name">---</div>
-            <div class="col col-2" data-label="Role">---</div>
-            <div class="col col-3" data-label="Team">---</div>
-            <div class="col col-4" data-label="rs3/osrs">---</div>
-          </li>
-        </ul>
-      </div>
+      <section id="hero" class="d-flex align-items-center">
+         <div class="container-fluid" data-aos="fade-up">
+            <div class="row justify-content-center">
+               <div
+                  class="
+                  col-xl-5 col-lg-6
+                  pt-3 pt-lg-0
+                  order-2 order-lg-1
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  "
+                  >
+                  <h1>Welcome to The LGBT+ Corner</h1>
+                  <h2>
+                     A place for LGBT+ Runescapers from across the globe to get
+                     together,<br>play games, chat, have a laugh and make friends!
+                  </h2>
+                  <div class="buttons">
+                     <div class="action_btn">
+                        <a
+                           href="https://secure.runescape.com/m=clan-home/clan/The%20LGBT%20Corner"
+                           class="btn-get-started scrollto"
+                           >Runescape</a
+                           >
+                        <a
+                           href="https://www.runeclan.com/clan/The_LGBT_Corner"
+                           class="btn-get-started scrollto"
+                           >Runeclan</a
+                           >
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img"
+                  data-aos="zoom-in"
+                  data-aos-delay="150"
+                  >
+                  <img
+                     src="assets\img\Gallery\logo-big.png"
+                     class="img-fluid animated"
+                     alt=""
+                     />
+               </div>
+            </div>
+         </div>
       </section>
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright-wrap d-md-flex py-4">
-          <div class="me-md-auto text-center text-md-start">
-            <div class="row"> <span class="type--fine-print">© <span class="update-year">2021 </span> The LGBT Corner&nbsp;— All Rights Reserved.</span>
+      <!-- End Hero -->
+      <main id="main">
+         <!-- ======= About Section ======= -->
+         <style>
+            body {
+            font-family: 'lato', sans-serif;
+            }
+            .container {
+            text-align: center;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+            h3 {
+            color: var(--primary-color);
+            font-size: 26px;
+            margin: 20px 0;
+            text-align: center;
+            }
+            h2 small {
+            font-size: 0.5em;
+            }
+            .responsive-table li {
+            color: var(--primary-color);
+            color: #444444;
+            border-radius: 3px;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            }
+            .responsive-table .table-header {
+            color:#111111;
+            background-color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            }
+            .responsive-table .table-row {
+            background-color: #fff;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+            }
+            .responsive-table .col-1 {
+            flex-basis: 10%;
+            }
+            .responsive-table .col-2 {
+            flex-basis: 40%;
+            }
+            .responsive-table .col-3 {
+            flex-basis: 25%;
+            }
+            .responsive-table .col-4 {
+            flex-basis: 25%;
+            }
+            @media all and (max-width: 767px) {
+            .responsive-table .table-header {
+            display: none;
+            }
+            .responsive-table li {
+            display: block;
+            }
+            .responsive-table .col {
+            flex-basis: 100%;
+            }
+            .responsive-table .col {
+            display: flex;
+            padding: 10px 0;
+            }
+            .responsive-table .col:before {
+            color: #6c7a89;
+            padding-right: 10px;
+            content: attr(data-label);
+            flex-basis: 50%;
+            text-align: right;
+            }
+            }    
+         </style>
+         <!-- ======= Layout like --- "name: chaos bolt" / Role: Admin / Team: Community Management / Rs3/Osrs: Rs3 ======= -->
+         <div class="container">
+            <h3>A full list of staff and their roles in the clan</h3>
+            <p>Feel free to contact any of the staff or ask in clan chat but this list is for better direction and understanding what role everyone has
+            <ul class="responsive-table">
+               <li class="table-header">
+                  <div class="col col-1"><b>Name</b></div>
+                  <div class="col col-2"><b>main role</b></div>
+                  <div class="col col-3"><b>team</b></div>
+                  <div class="col col-4"><b>rs3/osrs</b></div>
+               </li>
+               <!--1-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--2-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--3-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--4-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--5-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--6-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--7-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--8-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--9-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--10-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--1-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--11-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--12-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--13-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--14-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--15-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--16-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--17-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--18-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--19-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--20-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--21-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--22-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--23-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--24-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+               <!--25-->
+               <li class="table-row">
+                  <div class="col col-1" data-label="Name">---</div>
+                  <div class="col col-2" data-label="Role">---</div>
+                  <div class="col col-3" data-label="Team">---</div>
+                  <div class="col col-4" data-label="rs3/osrs">---</div>
+               </li>
+            </ul>
+         </div>
+         </section>
+      </main>
+      <!-- End #main -->
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="container">
+            <div class="copyright-wrap d-md-flex py-4">
+               <div class="me-md-auto text-center text-md-start">
+                  <div class="row"> <span class="type--fine-print">© <span class="update-year">2021 </span> The LGBT Corner&nbsp;— All Rights Reserved.</span>
+                  </div>
+                  <div class="credits">
+                     <!-- All the links in the footer should remain intact. -->
+                     <!-- You can delete the links only if you purchased the pro version. -->
+                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  </div>
+               </div>
+               <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                  <a href="https://twitter.com/thelgbtcorner" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="https://www.facebook.com/LGBTCornerClan/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="https://www.instagram.com/the.lgbt.corner/" class="instagram"><i class="bx bxl-instagram"></i></a>
+               </div>
             </div>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-          <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="https://twitter.com/thelgbtcorner" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.facebook.com/LGBTCornerClan/" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/the.lgbt.corner/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Main JS Files -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets\js\darkmode.js"></script>
-
-  </body>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <a
+         href="#"
+         class="back-to-top d-flex align-items-center justify-content-center"
+         ><i class="bi bi-arrow-up-short"></i
+         ></a>
+      <div id="preloader"></div>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/purecounter/purecounter.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <!-- Main JS Files -->
+      <script src="assets/js/main.js"></script>
+      <script src="assets\js\darkmode.js"></script>
+   </body>
 </html>
-
